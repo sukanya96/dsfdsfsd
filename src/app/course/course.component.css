@@ -1,0 +1,28 @@
+
+
+
+.container
+{
+
+flex-direction: column;
+margin-left: 200px;
+}
+
+.ss{
+
+margin-left: 400px;
+
+width: 768px;
+}
+
+.new{
+    margin-top: 16em;
+    margin-left: 10em;
+}
+
+h5{
+    color: crimson;
+}
+.navbar{
+    box-shadow: gainsboro;
+}

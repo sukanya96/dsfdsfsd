@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="js-tracked-without-react c_header_logo-wrap" href="#" target="_self" data-tracking-event="logo"
+        rel="noopenernoreferrer" href="music"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()" 
+            href="javascript:void(0);">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <span class="fas fa-search"></span>
+          <a class="navbar-brand" href="#"><h5>My Training</h5></a>
+          <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+          <div class="collapse navbar-collapse show" id="navbarTogglerDemo03" [ngClass]="{'show':navbarOpen}">
+            
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+     
+      
+<li class="nav-item dropdown">
+
+  <div class="btn-group" dropdown>
+    <button id="button-basic" dropdownToggle type="button" class="btn btn-light dropdown-toggle" aria-controls="dropdown-basic">
+    <i class='fas fa-th'></i>  Categories  </button>
+           
+     <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+
+               <li role="menuitem"><a class="dropdown-item dropdown-menu-right" href="develop">Development</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="business">Bussiness</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="finance">Finance and Accounting</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="software">IT and Software</a></li>
+
+               <li role="menuitem"><a class="dropdown-item" href="offc">Office productivity</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="personal">Personal Development</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="design">Design</a></li>
+
+               <li role="menuitem"><a class="dropdown-item" href="marketing">Marketing</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="life">Lifestyle</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="photo">Photography</a></li>
+
+               <li role="menuitem"><a class="dropdown-item" href="health">Health and Fitness</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="music">Music</a></li>
+               <li role="menuitem"><a class="dropdown-item" href="academics">Teaching and Academics</a></li>
+             </ul>
+             </div>
+             </li>
+             <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search any thing" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </ul>
+        <a class="nav-link text-dark" href="teach1"><p>teach an academy</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="nav-link text-dark" href="business1"><p>udemy for bussiness</p></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <button type="button" class=" btn" popover="Your cart is empty keep shopping" 
+        placement="bottom">
+          <i class="fa fa-shopping-cart" style="font-size:24px"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+      
+        <button type="button" (click)="loginDialog()" class="btn btn-outline-dark">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+   
+        <button type="button" class="btn-danger" data-toggle="modal" (click)="signup()" 
+          data-target="#myModal">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+    
+  </div>
+</nav>
+
+    
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="background-color:rgb(238,62,112); height: 100vh;">
+
+  <div class="new">
+          <h4>How it works</h4>
+          <p>&nbsp;&nbsp;&nbsp;<i class="fa fa-youtube-play" style="font-size:36px"></i>Find video courses on almost any topic</p>
+          <p>&nbsp;&nbsp;<i class="material-icons" style="font-size:36px">&#xe889;</i>Go at your own pace</p>
+          <p>&nbsp;&nbsp;<i class="material-icons" style="font-size:36px">&#xe858;</i>Learn from industry experts</p>
+        </div>
+
+        </div>
+        <!-- /.col-md-6 -->
+        <div class="col-md-6">
+
+            <div class="row align-items-center h-100">
+                <div class="col ml-5">
+                  <h4> Sign up and Start learning!</h4><hr>
+             
+             
+                  <form action="/action_page.php">
+                    
+                  
+                  <input type="text" class="form-control-lg" placeholder="Full Name" required><br><br>
+                  
+                  
+                  <input type="text" class="form-control-lg" placeholder="Email" name="psw" required><br><br>
+                  
+                  
+                  <input type="password" class="form-control-lg" placeholder="Password" name="psw" required><br><br>
+                  
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">Remember
+                  </label>
+                    
+                  <div class="clearfix">
+                  &nbsp;&nbsp;
+                  <button type="button" class="btn-lg btn-danger">Cancel</button>&nbsp;&nbsp;
+                  <button type="submit" class="btn-lg btn-danger">Sign Up</button><br><br>
+                  
+                  <p>By signing up, you agree to our <a href="#" style="color:dodgerblue">Terms of use</a>&nbsp;and
+                    <a href="#" style="color:dodgerblue">Privacy policy</a></p>
+                  
+                  <hr>
+                  <p>Already have an account?<a href="login" style="color:dodgerblue">Log In</a>
+                  </div>
+                  </form>  
+
+                </div>
+            </div>
+
+        </div>
+        <!-- /.col-md-6 -->
+
+    </div>
+    </div>
+  </body>
+</html>

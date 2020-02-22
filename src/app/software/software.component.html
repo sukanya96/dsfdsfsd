@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+ <link rel="stylesheet" href="../../assets/swiper.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+
+  
+  <!-- Demo styles -->
+  
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="js-tracked-without-react c_header_logo-wrap" href="#" target="_self" data-tracking-event="logo"
+      rel="noopenernoreferrer" href="music"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()" 
+          href="javascript:void(0);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="fas fa-search"></span>
+        <a class="navbar-brand" href="#"><h5>My Training</h5></a>
+        
+        <div class="collapse navbar-collapse show" id="navbarTogglerDemo03" [ngClass]="{'show':navbarOpen}">
+          
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       
+        
+  <li class="nav-item dropdown">
+
+    <div class="btn-group" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-light dropdown-toggle" aria-controls="dropdown-basic">
+      <i class='fas fa-th'></i>  Categories  </button>
+             
+       <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+ 
+                 <li role="menuitem"><a class="dropdown-item dropdown-menu-right" href="develop">Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="business">Bussiness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="finance">Finance and Accounting</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="software">IT and Software</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="offc">Office productivity</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="personal">Personal Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="design">Design</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="marketing">Marketing</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="life">Lifestyle</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="photo">Photography</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="health">Health and Fitness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="music">Music</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="academics">Teaching and Academics</a></li>
+               </ul>
+               </div>
+               </li>
+               <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 450px;"type="search" placeholder="Search any thing" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </ul>
+          <a class="nav-link text-dark" href="teach1"><p>Teach an academy</p></a>
+          <a class="nav-link text-dark" href="business1"><p>Udemy for bussiness</p></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button type="button" class=" btn" popover="Your cart is empty keep shopping" 
+          placement="bottom">
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+          <button type="button" (click)="loginDialog()" class="btn btn-outline-dark">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+     
+          <button type="button" class="btn-danger" data-toggle="modal" (click)="signup()" 
+            data-target="#myModal">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+    </div>
+  </nav>
+
+  <div class="ss bg-light">
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">It and Software</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">It Certification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">Network and Security</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">Hardware</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">Operating Systems</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="software">Other</a>
+      </li>
+     
+      </ul>
+  </div>
+  
+
+  <div class="container-lg-lg p-3 my-3 border bg-danger text-white">
+
+    <h2>IT & Software Courses</h2></div>
+    <div class="container">
+    <h4>Courses to get you started</h4>
+    
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="#home"><h5>Most popular</h5></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" data-toggle="tab" href="#menu1"><h5>Training</h5></a>
+      </li>
+      
+    </ul>
+  </div>
+  
+<hr>
+
+
+  <!-- Swiper --
+ 
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+
+         
+      <div class="swiper-slide">
+            <div class="row">
+            <div class="col-md-8">
+            <img src="https://i.udemycdn.com/course/240x135/648826_f0e5_4.jpg" width="320px" height="200px"></div>
+            <div class="col-md-10">
+            <p>The Complete Financial Analyst course 2020</p>
+            <p>365 careers</p><br>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>4.5(26,583)<br>
+            <i class="fa fa-inr" style="font-size:25px">492</i>
+        </div>
+        </div>
+        </div>
+        
+      
+    
+  
+          <div class="swiper-slide">
+            <div class="row">
+          <div class="col-md-8">
+          <img src="https://i.udemycdn.com/course/240x135/1202988_c73f_20.jpg" width="320px" height="200px">
+          </div> 
+          <div class="col-md-10">
+          <p>The Complete Analyst training and analyst course</p>
+           <p>chris houran, complete bussiness</p><br>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star checked"></span>
+           <span class="fa fa-star"></span>4.5(11,686)<br>
+           <i class="fa fa-inr" style="font-size:25px">516</i>
+          </div>
+          </div>
+          </div>
+          
+          <div class="swiper-slide">
+          <div class="row">
+          <div class="col-md-8">
+          <img src="https://i.udemycdn.com/course/240x135/1653432_3a57_3.jpg" width="350px" height="200px">
+          </div>
+          <div class="col-md-10">
+          <p>The Complete Financial Analyst course 2020</p>
+          <p>365 careers</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>4.5(26,583)<br>
+          <i class="fa fa-inr" style="font-size:25px">492</i>
+      </div>
+      </div>
+      </div>
+    
+    
+  
+  
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-8">
+           <img src="https://i.udemycdn.com/course/240x135/1098006_6917_6.jpg" width="350px" height="200px"></div>
+           <div class="col-md-10">
+         <p>The Complete Analyst training and analyst course</p>
+         <p>chris houran, complete bussiness</p>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star checked"></span>
+         <span class="fa fa-star"></span>4.5(11,686)<br>
+         <i class="fa fa-inr" style="font-size:25px">516</i>
+        </div>
+        </div>
+      </div>
+  
+  
+        <div class="swiper-slide">
+        <div class="row">
+        <div class="col-md-8">
+        <img src="https://i.udemycdn.com/course/240x135/1035472_23ce_5.jpg" width="350px" height="200px"></div>
+        <div class="col-md-10">
+        <p>The Complete Financial Analyst course 2020</p>
+        <p>365 careers</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>4.5(26,583)<br>
+        <i class="fa fa-inr" style="font-size:25px">492</i>
+    
+    </div>
+    </div>
+    </div>
+  
+  <div class="swiper-slide">
+          <div class="row">
+          <div class="col-md-8">
+          <img src="https://i.udemycdn.com/course/240x135/1208634_cd50.jpg" width="350px" height="200px"></div>
+          <div class="col-md-10">
+       <p>The Complete Analyst training and analyst course</p>
+       <p>chris houran, complete bussiness</p>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>4.5(11,686)<br>
+       <i class="fa fa-inr" style="font-size:25px">516</i>
+       </div>
+      </div>
+      </div>
+      
+      
+      <div class="swiper-slide">
+        <div class="row">
+        <div class="col-md-8">
+        <img src="https://i.udemycdn.com/course/240x135/148902_af91_14.jpg" width="350px" height="200px"></div>
+        <div class="col-md-10">
+        <p>The Complete Financial Analyst course 2020</p>
+        <p>365 careers</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>4.5(26,583)<br>
+        <i class="fa fa-inr" style="font-size:25px">492</i>
+    
+    </div>
+    </div>
+    </div>
+
+          <div class="swiper-slide">
+            <div class="row">
+          <div class="col-md-8">
+          <img src="https://i.udemycdn.com/course/240x135/1405632_6e6f_2.jpg" width="350px" height="200px"></div>
+          <div class="col-md-10">
+       <p>The Complete Analyst training and analyst course</p>
+       <p>chris houran, complete bussiness</p>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>4.5(11,686)<br>
+       <i class="fa fa-inr" style="font-size:25px">516</i>
+          </div>
+      </div>
+      </div>
+      
+      
+        
+      <div class="swiper-slide">
+        <div class="row">
+        <div class="col-md-8">
+        <img src="https://i.udemycdn.com/course/240x135/751792_622e_9.jpg" width="350px" height="200px">
+        </div>
+        <div class="col-md-10">
+        <p>The Complete Financial Analyst course 2020</p>
+        <p>365 careers</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>4.5(26,583)<br>
+        <i class="fa fa-inr" style="font-size:25px">492</i>
+    </div>
+    </div>
+    </div>
+
+          <div class="swiper-slide">
+            <div class="row">
+          <div class="col-md-8">
+            <img src="https://i.udemycdn.com/course/240x135/946194_028d.jpg" width="350px" height="200px">
+          </div>
+          <div class="col-md-10">
+            <p>The Complete Analyst training and analyst course</p>
+       <p>chris houran, complete bussiness</p>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star"></span>4.5(11,686)<br>
+       <i class="fa fa-inr" style="font-size:25px">516</i>
+          </div>
+      </div>
+      </div>
+    
+
+    </div>
+  
+      <div class="swiper-pagination"></div>
+    <!-- Add Pagination --
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>-->
+  <div class="swiper-container ">
+    
+    <div class="swiper-wrapper">
+        
+      <div class="swiper-slide">    
+          <div class="row">
+        <div class="col-md-6" [routerLink]="['/yogatrainerathome']">
+            <img src="https://i.udemycdn.com/course/240x135/648826_f0e5_4.jpg" class="card-img" alt="...">
+            <p>The Complete Financial Analyst course 2020</p>
+            <p>365 careers</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>4.5(26,583)<br>
+            <i class="fa fa-inr" style="font-size:25px">492</i>
+</div>
+
+<div class="col-md-6" [routerLink]="['/fitnesstrainerathome']">
+    <img src="https://i.udemycdn.com/course/240x135/1202988_c73f_20.jpg" style="height: 7em;" class="card-img" alt="...">
+    <p style="font-size: 97%;"></p>
+    <p>The Complete Analyst training and analyst course</p>
+    <p>chris houran, complete bussiness</p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>4.5(11,686)<br>
+    <i class="fa fa-inr" style="font-size:25px">516</i>
+
+</div>
+</div>
+       
+</div>
+
+      <div class="swiper-slide">
+          <div class="row ">
+        <div class="col-md-6">
+         <img src="https://i.udemycdn.com/course/240x135/1653432_3a57_3.jpg" style="height: 7em;" class="card-img" alt="...">
+          <p style="font-size: 97%;"></p>
+          <p>The Complete Financial Analyst course 2020</p>
+          <p>365 careers</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>4.5(26,583)<br>
+          <i class="fa fa-inr" style="font-size:25px">492</i>
+        </div>
+
+
+        <div class="col-md-6" [routerLink]="['/salonbook']">
+            <img src="https://i.udemycdn.com/course/240x135/1098006_6917_6.jpg" class="card-img" alt="...">
+            <p style="font-size: 97%;" ></p>
+            <p>The Complete Analyst training and analyst course</p>
+            <p>chris houran, complete bussiness</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>4.5(11,686)<br>
+            <i class="fa fa-inr" style="font-size:25px">516</i>
+                
+</div>
+</div>
+      </div>
+      <div class="swiper-slide ">  
+          <div class="row">
+           <div class="col-md-6" [routerLink]="['/massageforwomen']">
+        <img src="https://i.udemycdn.com/course/240x135/965832_212f_4.jpg" class="card-img" alt="...">
+        <p style="font-size: 97%;" ></p>
+        <p>The Complete Financial Analyst course 2020</p>
+        <p>365 careers</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>4.5(26,583)<br>
+        <i class="fa fa-inr" style="font-size:25px">492</i>
+</div>
+<div class="col-md-6" [routerLink]="['/massageformen']">
+    <img src="https://i.udemycdn.com/course/240x135/567828_67d0.jpg" class="card-img" alt="...">
+    <p style="font-size: 97%;" ></p>
+            <p>The Complete Analyst training and analyst course</p>
+            <p>chris houran, complete bussiness</p>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>4.5(11,686)<br>
+            <i class="fa fa-inr" style="font-size:25px">516</i>
+</div>
+</div>  
+</div>
+
+<div class="swiper-slide ">  
+  <div class="row">
+<div class="col-md-6" [routerLink]="['/massageformen']">
+  <img src="https://i.udemycdn.com/course/240x135/1495788_1aaa_2.jpg" class="card-img" alt="...">
+  <p style="font-size: 97%;" ></p>
+  <p>The Complete Financial Analyst course 2020</p>
+  <p>365 careers</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>4.5(26,583)<br>
+  <i class="fa fa-inr" style="font-size:25px">492</i>
+    </div>   
+    
+    <div class="col-md-6" [routerLink]="['/salonbook']">
+      <img src="https://i.udemycdn.com/course/240x135/1778502_f4b9_11.jpg" class="card-img" alt="...">
+      <p style="font-size: 97%;" ></p>
+      <p>The Complete Analyst training and analyst course</p>
+      <p>chris houran, complete bussiness</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>4.5(11,686)<br>
+      <i class="fa fa-inr" style="font-size:25px">516</i>
+          
+</div>
+</div>
+</div>
+
+
+<div class="swiper-slide ">  
+  <div class="row">
+<div class="col-md-6" [routerLink]="['/massageformen']">
+  <img src="https://i.udemycdn.com/course/240x135/751792_622e_9.jpg" class="card-img" alt="...">
+  <p style="font-size: 97%;" ></p>
+  <p>The Complete Financial Analyst course 2020</p>
+  <p>365 careers</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>4.5(26,583)<br>
+  <i class="fa fa-inr" style="font-size:25px">492</i>
+
+    </div>   
+    
+    <div class="col-md-6" [routerLink]="['/salonbook']">
+      <img src="https://i.udemycdn.com/course/240x135/1594488_69b9.jpg" class="card-img" alt="...">
+      <p style="font-size: 97%;" ></p>
+      <p>The Complete Analyst training and analyst course</p>
+      <p>chris houran, complete bussiness</p>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star"></span>4.5(11,686)<br>
+      <i class="fa fa-inr" style="font-size:25px">516</i>
+          
+</div>
+</div>
+</div>
+
+
+     
+    </div>
+    <div class="swiper-slide"></div>
+    <!-- Add Pagination -->
+    
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <hr>
+
+  
+ <div class="container">
+  <h2>Featured courses</h2></div>
+<div class="container bg-white ">
+  
+  <carousel>
+    <slide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://i.udemycdn.com/course/480x270/2726362_a804.jpg" width="500px" hieght="300px"></div>
+          <div class="col-md-6">
+        <h3>Google Cloud Platform (GCP) Cert: Associate Cloud Engineer</h3>
+        
+        <div class="lead">
+          <h6>35.5 hours&nbsp; &nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;
+            <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>4.8(108 ratings)</h6>
+          <h5>Develop the skills you need to pass the Google Cloud Platform (GCP) Associate Engineer
+            Certification exam! | By Nick Colyer</h5>
+            <button type="button" class="btn btn-info">Explore course</button></div>
+            <div style="float: right;"><h3>₹12,800</h3></div>
+        </div>
+      </div>
+    </slide>
+    <slide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://i.udemycdn.com/course/480x270/2726392_3857_4.jpg" width="500px" hieght="300px"></div>
+          <div class="col-md-6">
+        <h3>Mastering Salesforce DX and Visual Studio Code</h3>
+        <p>Last Updated January 2020</p>
+        <div class="lead">
+          <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;
+            <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span> 4.8(108 ratings)</h6>
+          <h5>Modular Application Development Using Unlocked Packages</h5>
+            <button type="button" class="btn btn-info">Explore course</button></div>
+            <div style="float: right;"><h3>₹1,280</h3></div>
+        </div>
+      </div>
+      </slide>
+
+    <slide>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://i.udemycdn.com/course/480x270/2697328_1744.jpg" width="500px" hieght="300px"></div>
+          <div class="col-md-6">
+        <h3>Python Automation for Network Engineers (Python 3.8)</h3>
+        <p>Last Updated January 2020</p>
+        <div class="lead">
+          <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;
+            <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span>
+       <span class="fa fa-star checked"></span> 4.8(108 ratings)</h6>
+         
+          <h5>Automate the boring networking stuff using Python programming with telnet, paramiko and
+            netmiko modules using python 3.8 | By Ashish • 20,000+ Students Worldwide
+          </h5><br>
+            <button type="button" class="btn btn-info">Explore course</button></div>
+            <div style="float: right;"><h3>₹12,800</h3></div>
+        </div>
+      </div>
+    </slide>
+  </carousel>
+
+
+  <br>
+  <br>
+<hr>
+</div>
+
+<!--Instructors-->
+
+<div class="container">
+  <h2>Popular Topics</h2>
+</div>
+<div class="swiper-container ">
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide">
+      <div class="row">
+        <div class="col-md-9">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Python</p>
+          </div>
+        </div></div>
+       
+        <div class="col-md-9">
+        <div class="card bg-light">
+          <div class="card-body text-center">
+            <p class="card-text">Data Science</p>
+          </div>
+        </div>
+      </div></div>
+    </div>
+
+
+
+          <div class="swiper-slide">
+            <div class="row">
+              <div class="col-md-9">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <p class="card-text">Web Development</p>
+                </div>
+              </div></div>
+             
+              <div class="col-md-9">
+              <div class="card bg-light">
+                <div class="card-body text-center">
+                  <p class="card-text">Javascript</p>
+                </div>
+              </div>
+            </div></div></div>
+
+
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-md-9">
+                <div class="card bg-light">
+                  <div class="card-body text-center">
+                    <p class="card-text">Machine Learning</p>
+                  </div>
+                </div></div>
+               
+                <div class="col-md-9">
+                <div class="card bg-light">
+                  <div class="card-body text-center">
+                    <p class="card-text">Java</p>
+                  </div>
+                </div>
+              </div></div></div>
+
+        
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="col-md-9">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <p class="card-text">React</p>
+                    </div>
+                  </div></div>
+                 
+                  <div class="col-md-9">
+                  <div class="card bg-light">
+                    <div class="card-body text-center">
+                      <p class="card-text">C#</p>
+                    </div>
+                  </div>
+                </div></div></div>
+
+        
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-md-9">
+                    <div class="card bg-light">
+                      <div class="card-body text-center">
+                        <p class="card-text">Unity</p>
+                      </div>
+                    </div></div>
+                   
+                    <div class="col-md-9">
+                    <div class="card bg-light">
+                      <div class="card-body text-center">
+                        <p class="card-text">Angular</p>
+                      </div>
+                    </div>
+                  </div></div></div>
+
+        
+                  <div class="swiper-slide">
+                    <div class="row">
+                      <div class="col-md-9">
+                      <div class="card bg-light">
+                        <div class="card-body text-center">
+                          <p class="card-text">Data Analysis</p>
+                        </div>
+                      </div></div>
+                     
+                      <div class="col-md-9">
+                      <div class="card bg-light">
+                        <div class="card-body text-center">
+                          <p class="card-text">Android Development</p>
+                        </div>
+                      </div>
+                    </div></div></div>
+
+        
+                    <div class="swiper-slide">
+                      <div class="row">
+                        <div class="col-md-9">
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <p class="card-text">Deep Learning</p>
+                          </div>
+                        </div></div>
+                       
+                        <div class="col-md-9">
+                        <div class="card bg-light">
+                          <div class="card-body text-center">
+                            <p class="card-text">Docker</p>
+                          </div>
+                        </div>
+                      </div></div></div>
+        
+
+                      <div class="swiper-slide">
+                        <div class="row">
+                          <div class="col-md-9">
+                          <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <p class="card-text">Node JS</p>
+                            </div>
+                          </div></div>
+                         
+                          <div class="col-md-9">
+                          <div class="card bg-light">
+                            <div class="card-body text-center">
+                              <p class="card-text">IOS Development</p>
+                            </div>
+                          </div>
+                        </div></div></div>
+        
+
+                        <div class="swiper-slide">
+                          <div class="row">
+                            <div class="col-md-9">
+                            <div class="card bg-light">
+                              <div class="card-body text-center">
+                                <p class="card-text">CSS</p>
+                              </div>
+                            </div></div>
+                           
+                            <div class="col-md-9">
+                            <div class="card bg-light">
+                              <div class="card-body text-center">
+                                <p class="card-text">C++</p>
+                              </div>
+                            </div>
+                          </div></div></div>
+                        
+                          </div>
+
+  <div class="swiper-pagination"></div>
+  <!-- Add Pagination -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  </div>
+
+
+<br>
+<br>
+<hr>
+
+<!-- Swiper -->
+
+<div class="container">
+  <h2>Popular Instructors</h2>
+</div> 
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            
+          <div class="row">
+          <div class="col-md-10">
+          <img src="https://i.udemycdn.com/user/75x75/9685726_67e7_4.jpg" class="rounded-circle" width="100px" height="100px">
+          </div>
+           <div class="col-md-10"><br>
+
+          <p>Jose Portilla</p>
+          <p>Python,Machine Learning</p><br><br>
+          <p>1,468,925 students,</p>
+          <p>28 courses</p>
+          </div>
+         </div>
+      </div>
+    
+  
+
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-10">
+            <img src="https://i.udemycdn.com/user/75x75/31926668_94e7_6.jpg" class="rounded-circle" width="100px" height="100px">
+            </div>
+             <div class="col-md-10"><br>
+  
+            <p>Academind by Maximilian Schwarzmüller</p>
+            <p>React,React hooks</p><br><br>
+            <p>833,368 students,</p>
+            <p>22 courses</p>
+            </div>
+        </div>
+        </div>
+        
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-10">
+            <img src="https://i.udemycdn.com/user/75x75/4466306_6fd8_3.jpg" class="rounded-circle" width="100px" height="100px">
+            </div>
+             <div class="col-md-10"><br>
+  
+            <p>Colt Steele</p>
+            <p>Web development,Mysql</p><br><br>
+            <p>701,854 students,</p>
+            <p>9 courses</p>
+            </div>
+    </div>
+    
+    </div>
+  
+  
+
+
+      <div class="swiper-slide">
+        <div class="row">
+          <div class="col-md-10">
+          <img src="https://i.udemycdn.com/user/75x75/2364054_83cd_5.jpg" class="rounded-circle" width="100px" height="100px">
+          </div>
+           <div class="col-md-10"><br>
+
+          <p>Kirill Eremenko</p>
+          <p>Data Science</p><br><br>
+          <p>1,076,679 students,</p>
+          <p>85 courses</p>
+          </div>
+      </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="row">
+          <div class="col-md-10">
+          <img src="https://i.udemycdn.com/user/75x75/31334738_a13c_2.jpg" class="rounded-circle" width="100px" height="100px">
+          </div>
+           <div class="col-md-10"><br>
+
+          <p>Angela Yu</p>
+          <p>Javascript,mango DB</p><br><br>
+          <p>351,727 students,</p>
+          <p>7 courses</p>
+          </div>
+  
+  </div>
+  </div>
+
+<div class="swiper-slide">
+  <div class="row">
+    <div class="col-md-10">
+    <img src="https://i.udemycdn.com/user/75x75/38516954_b11c_3.jpg" class="rounded-circle" width="100px" height="100px">
+    </div>
+     <div class="col-md-10"><br>
+
+    <p>Andrei Neagoie</p>
+    <p>Python,Javascript</p><br><br>
+    <p>186,152 students,</p>
+    <p>7 courses</p>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="swiper-slide">
+      <div class="row">
+        <div class="col-md-10">
+        <img src="https://i.udemycdn.com/user/75x75/5487312_0554.jpg" class="rounded-circle" width="100px" height="100px">
+        </div>
+         <div class="col-md-10"><br>
+
+        <p>Stephen Grider</p>
+        <p>React,Redux framework</p><br><br>
+        <p>514,647 students,</p>
+        <p>7 courses</p>
+        </div>
+  
+  </div>
+  </div>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-10">
+            <img src="https://i.udemycdn.com/user/75x75/599932_71aa_5.jpg" class="rounded-circle" width="100px" height="100px">
+            </div>
+             <div class="col-md-10"><br>
+  
+            <p>Tim Buchalka</p>
+            <p>Java,Python</p><br><br>
+            <p>610,631 students,</p>
+            <p>10 courses</p>
+            </div>
+    </div>
+    </div>
+    
+    
+      
+    <div class="swiper-slide">
+      <div class="row">
+        <div class="col-md-10">
+        <img src="https://i.udemycdn.com/user/75x75/8280056_7887_3.jpg" class="rounded-circle" width="100px" height="100px">
+        </div>
+         <div class="col-md-10"><br>
+
+        <p>365 careers</p>
+        <p>Data science,data analytics</p><br><br>
+        <p>719,596 students,</p>
+        <p>51 courses</p>
+        </div>
+  </div>
+
+  </div>
+        <div class="swiper-slide">
+          <div class="row">
+            <div class="col-md-10">
+            <img src="https://i.udemycdn.com/user/75x75/7799204_2091_5.jpg" class="rounded-circle" width="100px" height="100px">
+            </div>
+             <div class="col-md-10"><br>
+  
+            <p>Jonas Schmedtmann</p>
+            <p>Javascript,CSS</p><br><br>
+            <p>678,355 students,</p>
+            <p>5 courses</p>
+            </div>
+    </div>
+    </div>
+
+  </div>
+    <div class="swiper-pagination"></div>
+  <!-- Add Pagination -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+<br>
+<br>
+<hr>
+<!--featured courses-->
+
+<div class="container">
+  <h2>All IT & Software courses</h2>
+  <div class="row">
+    <div class="col-md-0">
+  <img src="https://i.udemycdn.com/browse_components/sidebar-notice/30-day-calendar.svg"></div>
+  <div class="col-sm-6">
+<h6>Not sure?Every course comes with a 30-day money-back guarantee</h6></div></div></div>
+
+<div class="container-lg bg-light ">
+  <div class="row">
+    <div class="col-md-1">
+  <button type="button" class="btn btn-outline-secondary">Filter</button>
+  </div>
+  
+  <div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Ratings</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Tablet</a>
+    <a class="dropdown-item" href="#">Smartphone</a>
+  </div></div>
+
+  <div class="col-md-1">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Duration</button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Tablet</a>
+    <a class="dropdown-item" href="#">Smartphone</a>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<br>
+<br>
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/567828_67d0.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,480</h3></div>
+    <h3>Complete python Bootcamp:Go from zero to hero</h3>
+    
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    <h3>from Python 3</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+<p>Learn python like a Professional Start from the basics and go all the</p>
+<p>to creating your own applications and games! | By Jose Portilla</p>
+</div></div></div>
+<hr>
+
+<br>
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/1754098_e0df_3.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,800</h3></div>
+    <h3>The Data Science Course 2020: Complete</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    <h3>Data Science Bootcamp</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+<p>Complete Data Science Training: Mathematics, Statistics, Python, Advanced</p>
+<p>Statistics in Python, Machine & Deep Learning</p>
+</div></div></div>
+
+<hr>
+<br>
+
+
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/950390_270f_3.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,600</h3></div>
+    <h3>Machine Learning A-Z™: Hands-On Python</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    
+    <h3>& R In Data Science</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+    
+<p>Learn to create Machine Learning Algorithms in Python and R from two Data</p>
+<p>Science experts. Code templates included.</p>
+</div></div></div>
+<hr>
+<br>
+
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/1362070_b9a1_2.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,500</h3></div>
+    <h3>The Complete 2020 Web Development Bootcamp</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    
+    <h3>Bootcamp</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+    
+<p>Become a full-stack web developer with just one course. HTML, CSS,</p>
+<p>Javascript, Node, React, MongoDB and more!</p>
+</div></div></div>
+<hr>
+<br>
+
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/1565838_e54e_10.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,450</h3></div>
+    <h3>The Web Developer Bootcamp</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    
+    <h3>& R In Data Science</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+    
+<p>The only course you need to learn web development - HTML, CSS, JS, Node,</p>
+<p>and More!</p>
+</div></div></div>
+<hr>
+<br>
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/625204_436a_2.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,480</h3></div>
+    <h3>Java Programming Masterclass for</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    <h3>Software Developers</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+    
+    
+<p>Learn Java In This Course And Become a Computer Programmer. Obtain</p>
+<p>valuable Core Java Skills And Java Certification</p>
+</div></div></div>
+<hr>
+<br>
+<div class="container bg-white">
+  <div class="row">
+    <div class="col-md-3">
+  <img src="https://i.udemycdn.com/course/240x135/533682_c10c_4.jpg">
+    </div>
+  <div class="col-md-9">
+    <div style="float: right;"><h3>₹12,480</h3></div>
+    <h3>React - The Complete Guide (incl Hooks,</h3>
+    <div style="float: right;"><span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span>
+      <span class="fa fa-star checked"></span></div>
+    
+    <h3>React Router, Redux)</h3>
+    <div style="float: right;">4.8(108 ratings)</div>
+    <h6>35.5hours&nbsp;&nbsp;409 lectures&nbsp;&nbsp;All Levels&nbsp;&nbsp;&nbsp;</h6>
+<p>Dive in and learn React.js from scratch! Learn Reactjs, Hooks, Redux, React</p>
+<p>Routing, Animations, Next.js and way more!</p>
+</div></div></div>
+<br>
+<hr>
+
+<div class="container">
+<pagination [totalItems]="30"></pagination>
+</div>
+
+
+</body>
+</html>
+
+

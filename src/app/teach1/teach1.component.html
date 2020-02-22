@@ -1,0 +1,426 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+   integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
+    aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="js-tracked-without-react c_header_logo-wrap" href="#" target="_self" data-tracking-event="logo"
+      rel="noopenernoreferrer" href="music"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()" 
+          href="javascript:void(0);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="My Training" class="ufb-logo" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaivRugA-OAmXFMtjz2qF0GypN3iLvNbv-ppvPvT4SQUGsv5MKg&s" 
+          width="80px" height="50px">
+        </a>
+      
+        <div class="collapse navbar-collapse show" id="navbarTogglerDemo03" [ngClass]="{'show':navbarOpen}">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       
+        
+  <li class="nav-item dropdown">
+
+    <div class="btn-group" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-light dropdown-toggle" 
+      aria-controls="dropdown-basic">
+      <i class='fas fa-th'></i>  Categories  </button>
+             
+       <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+ 
+                 <li role="menuitem"><a class="dropdown-item dropdown-menu-right" href="develop">Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="business">Bussiness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="finance">Finance and Accounting</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="software">IT and Software</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="offc">Office productivity</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="personal">Personal Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="design">Design</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="marketing">Marketing</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="life">Lifestyle</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="photo">Photography</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="health">Health and Fitness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="music">Music</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="academics">Teaching and Academics</a></li>
+               </ul>
+               </div>
+               </li>&nbsp;&nbsp;
+               <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 450px;"type="search" placeholder="Search any thing" 
+                aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </ul>
+          <a class="nav-link text-dark" href="teach1"><p>Teach an academy</p></a>
+          <a class="nav-link text-dark" href="business1"><p>Udemy for bussiness</p></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button type="button" class=" btn" popover="Your cart is empty keep shopping" 
+          placement="bottom">
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+          <button type="button" (click)="loginDialog()" class="btn btn-outline-dark">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+     
+          <button type="button" class="btn-danger" data-toggle="modal" (click)="signup()" 
+            data-target="#myModal">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+           
+    </div>
+  </nav>
+    
+<div>
+  <style>
+      .centered {
+        position: absolute;
+        top: 70%;
+        left:30%;
+        transform: translate(-50%, -50%);
+        height:98.5%;
+        width: 50%;
+      }
+      
+      </style>
+<img style="-webkit-user-select: none;margin: auto;" src="https://udemy-images.udemy.com/teaching/header-image.jpg" width="100%" height="100%">
+
+  <div class="centered">
+      <h1 style="color: white;">Make a global impact</h1>
+       <h3 style="color: white;">Create an online video course and earn money by teaching people around the world.</h3> 
+    <div class="search-container">
+      <form action="/action_page.php">
+        
+          <button style="height: 32px;background: #dc3545;border: none;color: white; border-radius: 7px;">
+             Become an  Instructor</button>
+      </form>
+  </div>
+</div>
+</div>
+<div>
+
+  <h1 style="text-align: center;">Discover your potential</h1>
+  <h1 style="text-align:center ;"></h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"> 
+     
+       <ul class="links ">
+        <i class='fas fa-hippo' style='font-size:24px'></i>
+       <h2>Earn Money</h2>
+       <p>Earn money every time a student purchases your</p>
+       <p>course. Get paid monthly through PayPal or</p>
+        <p>Payoneer, it’s your choice.</p>
+       </ul>
+      </div>
+      <div class="col-sm-4"> 
+       <ul class="links ">
+        <i class="fa fa-youtube-play" style="font-size:24px"></i>
+      <h2>Inspire students</h2>
+<p>Help people learn new skills, advance their careers,</p>
+<p>and explore their hobbies by sharing your</p>
+<p>knowledge.</p>
+        </ul>
+     </div>
+ 
+     <div class="col-sm-4"> 
+       <ul class="links ">
+        <i class='far fa-thumbs-up' style='font-size:36px'></i>
+       <h2>Join our community</h2>
+       <p>Take advantage of our active community of</p>
+       <p>instructors to help you through your course</p>
+       <p>creation process.</p>
+        
+       </ul>
+     </div>
+    </div>
+  </div>
+  <div>
+<style>
+        .purl {
+          position: absolute;
+          top: 170%;
+          left:30%;
+          transform: translate(-50%, -50%);
+          height:98.5%;
+          width: 50%;
+        }
+        </style>
+
+<img style="-webkit-user-select: none;margin: auto;" src="https://udemy-images.udemy.com/teaching/exceptional-opportunity.png" width="100%" height="100%">
+
+    <div class="purl">
+      <h1 style="text-align: center;color: white;">Exceptional opportunities</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2"> 
+         
+           <ul class="links ">
+      <h1 style="color: white;">30m</h1> 
+           <p style="color:white;">Students</p>
+           <p style="color: white;">worldwide</p>
+   
+           </ul>
+          </div>
+          <div class="col-sm-2"> 
+           <ul class="links ">
+          
+          <h1 style="color:white;">50+</h1>
+    <p style="color:white;">Different</p>
+    <p style="color:white;">languages</p>
+   
+            
+           </ul>
+         </div>
+     
+         <div class="col-sm-2"> 
+           <ul class="links ">
+           <h2 style="color:white;">190m</h2>
+           <p style="color:white;">Course</p>
+           <p style="color:white;">enrollments</p>
+           
+            
+           </ul>
+         </div>
+         <div class="col-sm-2"> 
+          <ul class="links ">
+          <h2 style="color:white;">190+</h2>
+          <p style="color:white;">Countries</p>
+          <p style="color:white;">taught</p>
+          
+           
+          </ul>
+        </div>
+        <div class="col-sm-2"> 
+          <ul class="links ">
+
+          <h2 style="color:white;">42k</h2>
+          <p style="color:white;">Supportive</p>
+          <p style="color:white;">instructors</p>
+          
+           
+          </ul>
+        </div>
+        </div>
+      </div>
+     
+  </div>
+</div>
+
+<hr>
+<div>
+  <h1 style="text-align: center;">Envision your success</h1>
+  <h1 style="text-align:center ;">___</h1>
+  
+    
+</div>
+</div>
+<hr>
+
+
+<div>
+  <h1 style="text-align: center;">Expand your reach</h1>
+  <p style="text-align: center;">We've changed lives by connecting instructors with students around the world.
+  </p>
+  <style>
+    .bb {
+      position: absolute;
+      top: 70%;
+      left:25.5%;
+      transform: translate(-50%, -50%);
+      height:98.5%;
+      width: 50%;
+    }
+    </style>
+
+
+
+<div class="bb">
+  
+</div>
+
+
+<h1 style="text-align:center ;">___</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="card" style="width: 300px; ">
+        <img src="https://www.udemy.com/staticx/udemy/images/teaching/instructors/en/profile-jean-lurssen.jpg" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+            <h5 class="card-title">Jean Lurssen
+              Watercolorist</h5>
+            <p class="card-text">Udemy has given me the opportunity to reach a global audience for my classes that wouldn’t have been possible otherwise.</p>
+            <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+    </div>
+</div>
+</div>
+
+  
+</div>
+<hr>
+
+<div>
+  
+  <style>
+    .cc {
+      position: absolute;
+      top: 285%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      height:98.5%;
+      width: 50%;
+    }
+    </style>
+
+<img style="-webkit-user-select: none;margin: auto;" src="https://www.udemy.com/staticx/udemy/js/webpack/table-discussion.a758bccf364ebf0ff15f0eb1180374d1.jpg" width="100%" height="100%">
+
+<div class="cc">
+    <h1 style="color: white;text-align: center;">We're here to help</h1>
+     <h4 style="color: white;">Our Instructor Support Team is here for you 24/7 to help you through your</h4> 
+  <h4 style="color: white;">course creation needs. Use our Teaching Center, a resource center to help you</h4>
+  <h4 style="color:white ;">through the process. Join Studio U and get peer-to-peer support from our</h4>
+  <h4 style="color:white ;">engaged instructor community. This community group is always on, always</h4>
+  <h4 style="color:white;">there, and always helpful.</h4>
+</div>
+</div>
+<div>
+  <h1 style="text-align:center;">Become an instructor today</h1>
+  <h4 style="text-align:center;">Join the world's largest online learning marketplace.
+  </h4>
+  <button style="height: 32px;background: #dc3545;border: none;color: white; border-radius: 7px;">Get Started</button>
+</div>
+
+
+</div>
+<hr>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4"> 
+     
+       <ul class="links ">
+         <li>
+         <a class="ud-click-tracking bold"  data-purpose="footer.links.business" href="webdevelopment" data-type="udemy-business-footer-clicked">
+           Udemy for Business
+         </a>    
+         </li>
+         <li>
+         <a class=" bold" data-purpose="footer.links.teach" href="/teaching/?ref=teach_footer">
+          Teach on Udemy
+         </a>
+         </li>
+         <li>
+         <a class=" " data-purpose="footer.links.mobile" href="/mobile/">Udemy app
+          </a>
+         </li>
+         <li>
+         <a class=" " data-purpose="footer.links.about" href="https://about.udemy.com/?locale=en-us">
+         About Us
+         </a>
+         </li>
+       </ul>
+      </div>
+      <div class="col-sm-4"> 
+       <ul class="links ">
+         <li>
+         <a class="ud-click-tracking bold" data-purpose="footer.links.business" href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer" data-type="udemy-business-footer-clicked">
+        Careers us
+         </a>
+         </li>
+         <li>
+         <a class=" bold" data-purpose="footer.links.teach" href="/teaching/?ref=teach_footer">
+           Blog
+         </a>
+         </li>
+         <li>
+         <a class=" " data-purpose="footer.links.mobile" href="/mobile/">
+           Help and Support
+         </a>
+         </li>
+         <li>
+         <a class=" " data-purpose="footer.links.about" href="https://about.udemy.com/?locale=en-us">
+           Affiliate
+         </a>
+         </li>
+       </ul>
+     </div>
+ 
+
+     <div class="col-sm-4"> 
+       <ul class="links ">
+         <li>
+         <a class="ud-click-tracking bold" data-purpose="footer.links.business" href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer" data-type="udemy-business-footer-clicked">
+           Sitemap
+         </a>
+         </li>
+         <li>
+         <a class=" bold" data-purpose="footer.links.teach" href=" ">
+           Featured Course
+         </a>
+         </li>
+       </ul>
+     </div>
+    </div>
+  </div>
+  <hr>
+  <div>
+  <span>Top companies choose <a href="https://business.udemy.com/request-demo/?locale=en_US&amp;ref=footer-ad&amp;mx_pg=mobile">Udemy for Business</a> to build in-demand career skills.</span>
+ <div>
+  <img alt="Lyft" class="ufb-notice--logo--3MpZQ" height="24" width="34" src="https://i.udemycdn.com/partner-logos/lyft-logo.svg">
+  <img alt="adidas" class="ufb-notice--logo--3MpZQ" height="24" width="36" src="https://i.udemycdn.com/partner-logos/adidas-logo.svg">
+  <img alt="Eventbrite" class="ufb-notice--logo--3MpZQ ufb-notice--eventbrite--3L6oj" height="24" width="99" src="https://i.udemycdn.com/partner-logos/eventbrite-logo.svg">
+  <img alt="SurveyMonkey" class="ufb-notice--logo--3MpZQ" height="24" width="157" src="https://i.udemycdn.com/partner-logos/surveymonkey-logo.svg">
+  <img alt="Booking.com" class="ufb-notice--logo--3MpZQ ufb-notice--booking--2_LKg" height="24" width="140" src="https://i.udemycdn.com/partner-logos/booking-logo.svg">
+  <img alt="Pinterest" class="ufb-notice--logo--3MpZQ ufb-notice--pinterest--368zU" height="24" width="99" src="https://i.udemycdn.com/partner-logos/pinterest-logo.svg">
+</div> 
+</div>
+  <hr>
+  <div class="container-fluid footer__bottom">
+   <div class="row">
+   <div class="col-sm-4">
+   <a class="dib mr20" href="/">
+   <img alt="My Training" class="ufb-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaivRugA-OAmXFMtjz2qF0GypN3iLvNbv-ppvPvT4SQUGsv5MKg&s" width="100px" height="2%">
+   </a>
+   <div class="visible-xxs-block visible-xs-inline-block mb10"></div>
+   <span class="footer__copyright dib mr20 text-midnight-lighter">
+   Copyright © 2020 Udemy, Inc.
+   </span>
+   <div class="visible-xxs-block visible-xs-inline-block mb10"></div>
+   </div>
+   <div class="col-sm-6 text-right footer__links--bottom">
+   <ul class="links list-inline">
+   <li>
+   <a data-purpose="terms-link" href="/terms/">
+   Terms
+   </a>
+   </li>
+   <li>
+   <a data-purpose="privacy-link" href="/terms/privacy/">
+   Privacy Policy and Cookie Policy
+   </a>
+   </li>
+   <li class="footer__app-download-link ud-component--footer--mobile-app-download-link" ng-non-bindable=""><a data-purpose="mobile-app-download-link" href="https://udemy.app.link/garBkjjtDO" rel="noopener noreferrer" target="_blank">Get the app</a></li>
+   </ul>
+   </div>
+   </div>
+   </div>
+   <hr class="hr-primary">
+   <div class="ud-component--footer--incentive-signup" ng-non-bindable=""><div></div></div>
+   <div class="ud-component--footer--share-welcome-popup" ng-non-bindable=""></div>
+ </footer> 
+ 
+</body>
+</html>

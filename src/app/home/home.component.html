@@ -1,0 +1,501 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
+  integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <link rel="stylesheet" href="../../assets/swiper.min.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+  <!--<style>
+   
+   .navbar a {
+    float: left;
+      padding: 5px;
+     text-decoration: none;
+      font-size: 17px;
+    }
+  
+    .navbar input{
+      width:450px;
+        }
+
+    .button:hover {
+     background-color: white;
+    }
+    
+</style>-->
+
+</head>
+<!-- 
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="js-tracked-without-react c_header_logo-wrap" href="#" target="_self" data-tracking-event="logo"
+      rel="noopenernoreferrer" href="music"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" (click)="toggleNavbar()" 
+          href="javascript:void(0);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img alt="My Training" class="ufb-logo" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaivRugA-OAmXFMtjz2qF0GypN3iLvNbv-ppvPvT4SQUGsv5MKg&s" 
+          width="80px" height="50px">
+        </a>
+      
+        <div class="collapse navbar-collapse show" id="navbarTogglerDemo03" [ngClass]="{'show':navbarOpen}">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+       
+        
+  <li class="nav-item dropdown">
+
+    <div class="btn-group" dropdown>
+      <button id="button-basic" dropdownToggle type="button" class="btn btn-light dropdown-toggle" 
+      aria-controls="dropdown-basic">
+      <i class='fas fa-th'></i>  Categories  </button>
+             
+       <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu" role="menu" aria-labelledby="button-basic">
+ 
+                 <li role="menuitem"><a class="dropdown-item dropdown-menu-right" href="develop">Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="business">Bussiness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="finance">Finance and Accounting</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="software">IT and Software</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="offc">Office productivity</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="personal">Personal Development</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="design">Design</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="marketing">Marketing</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="life">Lifestyle</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="photo">Photography</a></li>
+ 
+                 <li role="menuitem"><a class="dropdown-item" href="health">Health and Fitness</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="music">Music</a></li>
+                 <li role="menuitem"><a class="dropdown-item" href="academics">Teaching and Academics</a></li>
+               </ul>
+               </div>
+               </li>&nbsp;&nbsp;
+               <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" style="width: 450px;"type="search" placeholder="Search any thing" 
+                aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+          </ul>
+          <a class="nav-link text-dark" href="teach1"><p>Teach an academy</p></a>
+          <a class="nav-link text-dark" href="business1"><p>Udemy for bussiness</p></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+          <button type="button" class=" btn" popover="Your cart is empty keep shopping" 
+          placement="bottom">
+            <i class="fa fa-shopping-cart" style="font-size:24px"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
+        
+          <button type="button" (click)="loginDialog()" class="btn btn-outline-dark">Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+     
+          <button type="button" class="btn-danger" data-toggle="modal" (click)="signup()" 
+            data-target="#myModal">Sign Up</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
+           
+    </div>
+  </nav>
+    
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../../assets/udemy edit.JPG" alt="Responsive image" class="img-fluid" width="1450" height="500">
+        
+        </div>
+        </div>
+          <br>
+          
+          <div class="container">
+            <h2>The world’s largest selection of courses</h2>
+            
+            <br>
+            <!-- Nav tabs --
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="business">Bussiness</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="design">Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="photo">Photography</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="develop">Development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="market">Marketing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="software">IT and Software</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" data-toggle="tab" href="personal">Personal development</a>
+              </li>
+              </ul>
+              </div>
+          <br>
+          <br>
+
+        <div class="container-lg-lg p-5 my-5 bg-dark text-white text-center">
+          <div class="float-right">
+            <i class='fab fa-angular' style='font-size:25px'></i>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+          <i class='fab fa-app-store-ios' style='font-size:24px'></i>
+        </div>
+          <div class="col-md-5">
+            <i class='fas fa-balance-scale' style='font-size:24px'></i>
+          </div>
+        </div>
+
+        <h1>Get personalized recommendations</h1>
+          <div class="row" >
+            <div class="col-lg-6">
+              <i class='fas fa-laptop' style='font-size:24px'></i>
+          </div></div>
+          Answer a few questions for your top picks
+            <div class="float-right">
+              <i class='fas fa-shapes' style='font-size:24px'></i>
+            </div>
+          <br>
+          <div class="row">
+            <div class="col-md-2">
+          <i class='fas fa-chart-bar' style='font-size:24px'></i>
+        </div></div>
+          <button type="button" class="btn btn-danger"><a class="item text-white" href="get">Get started</a></button>
+          <br><br>
+          <div class="col-md-13">
+            <i class='fas fa-certificate' style='font-size:24px'></i>
+        </div>
+        </div>
+      
+        <div class="buttons">
+        <div class="container">
+         <h1>Top categories</h1>
+          <div class="row">
+            <div class="col-md-3">
+              <a href="develop" class="btn btn-outline-dark btn-lg">
+                <i class="fas fa-laptop-code"></i>&nbsp;&nbsp;Development</a>
+          </div>
+          <div class="col-md-3">
+            <a href="business" class="btn btn-outline-dark btn-lg">
+              <i class="fas fa-chart-bar"></i>&nbsp;&nbsp;Bussiness</a>
+          </div>
+          <div class="col-md-3">
+            <a href="software" class="btn btn-outline-dark btn-lg">
+              <i class='fas fa-desktop'></i>&nbsp;&nbsp;IT and software</a>
+            </div>
+            <div class="col-md-3">
+              <a href="design" class="btn btn-outline-dark btn-lg">
+                <i class='fas fa-pencil-ruler'></i>&nbsp;&nbsp;Design</a><br>
+          </div></div><br>
+          <div class="row">
+            <div class="col-md-3">
+          <a href="marketing" class="btn btn-outline-dark btn-lg">
+            <i class='fas fa-bullseye'></i>&nbsp;&nbsp;Marketing</a>
+          </div>
+          <div class="col-md-3">
+          <a href="personal" class="btn btn-outline-dark btn-lg">
+            <i class='fas fa-book-open'></i>&nbsp;&nbsp;Personal development</a>
+          </div>
+          <div class="col-md-3">
+          <a href="photo" class="btn btn-outline-dark btn-lg">
+            <i class="fa fa-camera"></i>&nbsp;Photography</a>
+          </div>
+          <div class="col-md-3">
+            <a href="swiper" class="btn btn-outline-dark btn-lg">
+              <i class='fas fa-music'></i>&nbsp;&nbsp;Music</a>
+          </div></div></div>
+          <br>
+          <br></div>
+
+          <div class="container">
+            <h2>What our students have to say</h2>
+          </div>
+          <br><br>
+
+         <div class="container"> 
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                    <div class="row">
+                    <div class="col-md-6">
+                    <img src="https://i.udemycdn.com/user/100x100/8872940_27b4_3.jpg" 
+                    class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+                    <br>
+                    <br>
+                    <h4>Borivoje</h4>
+                    <br><br><br><br>
+                    <div class="col-md-10">
+                      <p>Udemy is a life saver. I don't have 
+                    the time or money for a college education.
+                    My goal is to become a freelance web 
+                    developer,and thanks to Udemy, I'm really close.</p>
+                </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                  <div class="row">
+                    <div class="col-md-6">
+                  <img src="https://i.udemycdn.com/user/100x100/22869844_edad.jpg" 
+                  class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+                  <br>
+                  <br>
+                  <h4>Dipesh</h4>
+                  <br><br><br><br>
+                  <div class="col-md-10">
+                  <p>I believe in lifelong 
+                    learning and Udemy is a great 
+                    place to learn from experts. 
+                    I've learned a lot and recommend 
+                    it to all my friends.</p>
+                  </div>
+                </div>
+              </div>
+              
+              
+                  
+              <div class="swiper-slide">
+                <div class="row">
+                <div class="col-md-6">
+                <img src="https://i.udemycdn.com/user/100x100/26154780_76c8.jpg" 
+                class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+                <br>
+                <br>
+                <h4>Zulaika</h4>
+                <br> <br><br> <br>
+               <div class="col-md-10">
+                <p>I work in project management and joined
+                   Udemy because I get great courses for 
+                   less. The instructors are fantastic, 
+                   interesting, and helpful. I plan to 
+                   use Udemy for a long time!</p>
+            </div>
+            </div>
+            </div>
+            
+          
+          
+            <div class="swiper-slide">
+              <div class="row">
+              <div class="col-md-6">
+              <img src="https://i.udemycdn.com/user/100x100/31841220_f398_2.jpg" 
+              class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+              <br>
+              <br>
+              <h4>Marco</h4>
+              <br><br><br><br><br>
+              <div class="col-md-10">
+              <p>Thank you Udemy! You've 
+                renewed my passion for learning 
+                and my dream of becoming a web developer.</p>
+          </div>
+          </div>
+          </div>
+          
+          
+          
+          <div class="swiper-slide">
+            <div class="row">
+            <div class="col-md-6">
+            <img src="https://i.udemycdn.com/user/75x75/23121946_3025_4.jpg" 
+            class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+            <br>
+            <br>
+            <h4>Zulaika</h4>
+            <br><br><br><br>
+           <div class="col-md-10">
+            <p>I work in project management and joined
+               Udemy because I get great courses for 
+               less. The instructors are fantastic, 
+               interesting, and helpful. I plan to 
+               use Udemy for a long time!</p>
+         </div>
+        </div>
+        </div>
+        
+          
+        <div class="swiper-slide">
+          <div class="row">
+          <div class="col-md-6">
+          <img src="https://i.udemycdn.com/user/75x75/3890126_2b28_11.jpg" 
+          class="rounded-circle" alt="Cinque Terre" width="80px" height="60px"></div>
+          <br>
+          <br>
+          <h4>Justin</h4>
+          <br><br><br><br><br>
+          <div class="col-md-10">
+          <p>The best part about Udemy is the selection. 
+            You can find a course for anything 
+            you want to learn!</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      <br><br>
+            <div class="swiper-pagination"></div>
+            <!-- Add Pagination --
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+
+
+           <div class="container-lg-lg p-5 my-5 bg-light text-center">
+            <p>Trusted by companies of all sizes</p>
+            <br>
+            <br>
+            <img src="https://i.udemycdn.com/partner-logos/booking-logo.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.udemycdn.com/partner-logos/volkswagen-logo.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.udemycdn.com/partner-logos/mercedes-logo.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.udemycdn.com/partner-logos/pinterest-logo.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.udemycdn.com/partner-logos/adidas-logo.svg">&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="https://i.udemycdn.com/partner-logos/eventbrite-logo.svg">
+            <br>
+            <br>
+          
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Become an instructor</h3>
+                <p>Top instructors from around the world teach millions</p> 
+                <p>of students on Udemy.We provide the tools and</p>
+                  <p>skills to teach what you love.</p><br>
+                  <button type="button" class="btn btn-danger" href="">Get started</button></div>
+                  <div class="col-md-6">
+                  <h3>Udemy for Business</h3>
+                  <p>Get unlimited access to 3,500+ of Udemy’s top</p>
+                  <p>courses for your team.</p><br>
+                  <button type="button" class="btn btn-danger">Get Udemy for bussiness</button>
+                   </div></div></div>
+                
+                   <footer>
+                    <div class="container-fluid bg-white">
+                      <div class="row">
+                        <div class="col-sm-4"> 
+                       
+                         <ul class="links ">
+                           <li>
+                           <a class="ud-click-tracking bold"  data-purpose="footer.links.business" href="webdevelopment" data-type="udemy-business-footer-clicked">
+                             Udemy for Business
+                           </a>    
+                           </li>
+                           <li>
+                           <a class=" bold" data-purpose="footer.links.teach" href="/teaching/?ref=teach_footer">
+                            Teach on Udemy
+                           </a>
+                           </li>
+                           <li>
+                           <a class=" " data-purpose="footer.links.mobile" href="/mobile/">Udemy app
+                            </a>
+                           </li>
+                           <li>
+                           <a class=" " data-purpose="footer.links.about" href="https://about.udemy.com/?locale=en-us">
+                           About Us
+                           </a>
+                           </li>
+                         </ul>
+                        </div>
+                        <div class="col-sm-4"> 
+                         <ul class="links ">
+                           <li>
+                           <a class="ud-click-tracking bold" data-purpose="footer.links.business" href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer" data-type="udemy-business-footer-clicked">
+                          Careers us
+                           </a>
+                           </li>
+                           <li>
+                           <a class=" bold" data-purpose="footer.links.teach" href="/teaching/?ref=teach_footer">
+                             Blog
+                           </a>
+                           </li>
+                           <li>
+                           <a class=" " data-purpose="footer.links.mobile" href="/mobile/">
+                             Help and Support
+                           </a>
+                           </li>
+                           <li>
+                           <a class=" " data-purpose="footer.links.about" href="https://about.udemy.com/?locale=en-us">
+                             Affiliate
+                           </a>
+                           </li>
+                         </ul>
+                       </div>
+                   
+                  
+                       <div class="col-sm-4"> 
+                         <ul class="links ">
+                           <li>
+                           <a class="ud-click-tracking bold" data-purpose="footer.links.business" 
+                           href="https://business.udemy.com/?locale=en_US&amp;mx_pg=home-page&amp;ref=footer" 
+                           data-type="udemy-business-footer-clicked">
+                             Sitemap
+                           </a>
+                           </li>
+                           <li>
+                           <a class=" bold" data-purpose="footer.links.teach" href=" ">
+                             Featured Course
+                           </a>
+                           </li>
+                         </ul>
+                       </div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                    
+                  </div>
+                    <hr>
+                    <div class="container-fluid footer__bottom">
+                     <div class="row">
+                     <div class="col-sm-4">
+                     <a class="dib mr20" href="/">
+                     <img alt="My Training" class="ufb-logo" 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIaivRugA-OAmXFMtjz2qF0GypN3iLvNbv-ppvPvT4SQUGsv5MKg&s" 
+                     width="80px" height="80px">
+                     </a>
+                     <div class="visible-xxs-block visible-xs-inline-block mb10">
+                     
+                     <span class="footer__copyright dib mr20 text-midnight-lighter">
+                     Copyright © 2020 Udemy, Inc.
+                     </span></div>
+                     <div class="visible-xxs-block visible-xs-inline-block mb10"></div>
+                     </div>
+                     <div class="col-sm-6 text-right footer__links--bottom">
+                     <ul class="links list-inline">
+                     <li>
+                     <a data-purpose="terms-link" href="/terms/">
+                     Terms &nbsp;<a data-purpose="privacy-link" href="/terms/privacy/">
+                      Privacy Policy and Cookie Policy
+                     </a></a>
+                     </li>
+                      </ul>
+                     </div>
+                     </div>
+                     </div>
+                     <li class="footer__app-download-link ud-component--footer--mobile-app-download-link" 
+                     ng-non-bindable="">
+                     <a data-purpose="mobile-app-download-link" href="https://udemy.app.link/garBkjjtDO" 
+                     rel="noopener noreferrer" target="_blank" style="float: right;">Get the app</a></li>
+
+                     <hr class="hr-primary">
+                     <div class="ud-component--footer--incentive-signup" ng-non-bindable=""><div></div></div>
+                     <div class="ud-component--footer--share-welcome-popup" ng-non-bindable=""></div>
+                   </footer> 
+
+</body> -->
+</html>
